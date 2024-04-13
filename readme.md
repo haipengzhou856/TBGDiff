@@ -24,7 +24,7 @@ My basic environment: `Python=3.8, CUDA=12.2, ` ~~Pytorch=1.11.0~~ . `medpy` is 
 
 
 
-**News: ** Please update the `pytorch ` **with higher version (1.12.1 or higher)** for using the resume training. I found that the older version will produce some bugs (see [here](https://stackoverflow.com/questions/73095460/assertionerror-if-capturable-false-state-steps-should-not-be-cuda-tensors)) for the optimizer. And using lower version of `accelerate` ([see next section](##Set up))
+**News: ** Please update the `pytorch ` **with higher version (1.12.1 or higher)** for using the resume training. I found that the older version will produce some bugs (see [here](https://stackoverflow.com/questions/73095460/assertionerror-if-capturable-false-state-steps-should-not-be-cuda-tensors)) for the optimizer. And using lower version of `accelerate` (see next section)
 
 ### Pretrained backbone
 
@@ -57,7 +57,7 @@ if accelerator.is_main_process:
            pred_path=os.path.join(result_path,"ckpt_epoch{epoch}".format(epoch=epoch)))
 ```
 
-Please change the `gt_path   ` for your platform.
+Please change the `gt_path` for your platform.
 
 
 
@@ -181,7 +181,7 @@ accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 in
 
 ## Citation
 
-If this paper and code is useful in your research, please consider citing:
+If this paper and code are useful in your research, please consider citing:
 
 ```
 @InProceedings{}
