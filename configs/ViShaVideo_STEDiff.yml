@@ -1,0 +1,49 @@
+DATASET:
+  DATA_ROOT: "/home/haipeng/Code/Data/ViSha"
+  MODE: "train"
+  MEAN: [ 0.485, 0.456, 0.406 ]
+  STD: [ 0.229, 0.224, 0.225 ]
+  IMG_SIZE: 512
+  TIME_CLIP: 5
+  BATCH_SIZE: 3
+  NUM_WORKERS: 16
+
+
+
+SOLVER:
+  EPOCH: 20
+  LR: 0.000003
+  MILESTONGS: [999999999] # do not apply changing the lr
+  GAMMA: 0.8
+  OPTIM: "AdamW"
+  DECAY: 0.00001
+  MOMENTUM: 0.9
+  LR_SCHEDULE: True
+
+DIFFUSION:
+  TIMESTEPS: 20
+  SCALE: 0.01
+  SCHEDULER: "cosine"
+  TD: 1
+
+
+MODEL:
+  RESUME_PATH: ""
+  CKPT_PATH: "TBGDiff_best_ckpt9"
+  START_WARM_STEP: 0
+  END_WARM_STEP: 1
+
+
+SEED: 42
+
+
+OUTPUT:
+  HOME: "./output/"
+  DATA_NAME: "STEDiff"
+  MODEL_NAME: "STEDiff_20ts_5FS_3e5_3bs_SBAA_512"
+  TB: "/tb_path"
+  CKPT: "/ckpt_path"
+  LOG: "/log_path"
+  RESULT: "/pred_result"
+  STORE_EPOCH: 1
+  STORE_STEP: 300

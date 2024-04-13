@@ -1,0 +1,49 @@
+DATASET:
+  DATA_ROOT: "/home/haipeng/Code/Data/ViSha"
+  MODE: "train"
+  MEAN: [ 0.485, 0.456, 0.406 ]
+  STD: [ 0.229, 0.224, 0.225 ]
+  IMG_SIZE: 512
+  TIME_CLIP: 5
+  BATCH_SIZE: 4
+  NUM_WORKERS: 16
+
+
+
+SOLVER:
+  EPOCH: 20
+  LR: 0.00003
+  MILESTONGS: [999999999]
+  GAMMA: 0.8
+  OPTIM: "AdamW"
+  DECAY: 0.00001
+  MOMENTUM: 0.9
+  LR_SCHEDULE: True
+
+DIFFUSION:
+  TIMESTEPS: 20
+  SCALE: 0.01
+  SCHEDULER: "cosine"
+  TD: 1 # time difference
+
+
+MODEL:
+  RESUME_PATH: ""
+  CKPT_PATH: "PEEDiff_best_ckpt17"
+  START_WARM_STEP: 0
+  END_WARM_STEP: 1
+
+
+SEED: 42
+
+
+OUTPUT:
+  HOME: "./output/"
+  DATA_NAME: "PEDiff"
+  MODEL_NAME: "PEDiff_20ts_5FS_3e5_DSA"
+  TB: "/tb_path"
+  CKPT: "/ckpt_path"
+  LOG: "/log_path"
+  RESULT: "/pred_result"
+  STORE_EPOCH: 1
+  STORE_STEP: 300
