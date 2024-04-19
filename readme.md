@@ -59,6 +59,12 @@ if accelerator.is_main_process:
 
 Please change the `gt_path` for your platform.
 
+## Off-the-shelf Results
+
+If you guys do not want to reproduce ours and other methods, directly download the visual results on [Google Drive](https://drive.google.com/file/d/1ek2AIsEXXNvozA1cllfWIYYNzoFtupXl/view?usp=drive_link) for a convenience.
+
+Most of them are provided by  [scotch&soda (cvpr23)](https://github.com/lihaoliu-cambridge/scotch-and-soda/tree/main). We add some latest works.
+
 
 
 ## Experiments
@@ -119,7 +125,7 @@ And it will produce following outputs
 
 ### Inference
 
-Actually we testing every epoch during training stage, and if you just want to infer our **well-trained** model, please download the [**ckpt of TBGDiff**](https://drive.google.com/file/d/1ELEOTQOXDfQ2n5WNy2AKMzQNUiMl6V4M/view?usp=drive_link)  and unzip it in the project (see the `MODEL.CKPT_PATH` in the config `yml` file) , then run the snippet:
+Actually we testing every epoch during training stage, and if you just want to infer our **well-trained** model, please download the [**ckpt of TBGDiff on Google Drive**](https://drive.google.com/file/d/1ELEOTQOXDfQ2n5WNy2AKMzQNUiMl6V4M/view?usp=drive_link)  and unzip it in the project (see the `MODEL.CKPT_PATH` in the config `yml` file) , then run the snippet:
 
 ```
 accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 inference.py --config "configs/ViShaVideo_STEDiff.yml"
@@ -145,7 +151,7 @@ Very long time ago, I have finished some basic experiments in other machines. I 
 
 The performance of PEEDiff is also competitive. We have `IOU:0.645, F_beta:0.780, MAE:0.0286, BER:10.39, SBER:19.37, NBER:1.40`
 
-For testing the PEEDiff, download the [**ckpt**](https://drive.google.com/file/d/1dV0FqFROHXLm9rHy3VemglKjZvbAlosg/view?usp=drive_link)  and unzip it, then run the command
+For testing the PEEDiff, download the [**ckpt on Google Drive**](https://drive.google.com/file/d/1dV0FqFROHXLm9rHy3VemglKjZvbAlosg/view?usp=drive_link)  and unzip it, then run the command
 
 ```
 accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 inference.py --config "configs/ViShaVideo_PEEDiff.yml"
@@ -176,8 +182,9 @@ accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 in
 
 ## Acknowledgement
 
-* Thanks for  Hongqiu, [Tian Ye](https://owen718.github.io/), and [Zhaohu](https://ge-xing.github.io/) for their great idea and discussion! 
+* Thanks for  Hongqiu, [Tian Ye](https://owen718.github.io/), and [Zhaohu](https://ge-xing.github.io/)  for their great idea and discussion! 
 * Thanks for our great [TEAM](https://sites.google.com/site/indexlzhu/team)! My pleasure and lucky to join this group! 
+* Thanks for the open-source researchers! 
 
 ## Citation
 
