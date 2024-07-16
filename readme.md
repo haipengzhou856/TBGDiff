@@ -12,7 +12,8 @@ This is an official repo for TBGDiff.  We use Diffusion for video shadow detecti
 
 But you can freely stolen the codes, I guess it maybe helpful.
 
-Visit our [project page](https://haipengzhou856.github.io/paper_page/TBGDiff/TBGDiff.html) to find more details. Thanks for your attention : )
+Visit our [project page](https://haipengzhou856.github.io/paper_page/TBGDiff/TBGDiff.html) to find more details. Thanks for your attention :)
+![STAN](./asset/method.png)
 
 ## Preparation
 
