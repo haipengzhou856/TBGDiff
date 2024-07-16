@@ -8,7 +8,7 @@ This work has been accepted by ACM MM 2024. Thanks for the co-authos.
 
 This is an official repo for TBGDiff.  We use Diffusion for video shadow detection. 
 
- **I don't like this incremental shit work, even it is accepted.** [see why](##Others)
+ **I don't like this incremental shit work, even it is accepted.** [see why](#others)
 
 But you can freely steal the codes, it may be helpful.
 
