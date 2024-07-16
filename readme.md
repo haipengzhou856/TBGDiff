@@ -10,7 +10,7 @@ This is an official repo for TBGDiff.  We use Diffusion for video shadow detecti
 
  **I don't like this incremental shit work, even it is accepted.** [see why](##Others)
 
-But you can freely stolen the codes, I guess it maybe helpful.
+But you can freely steal the codes, it may be helpful.
 
 Visit our [project page](https://haipengzhou856.github.io/paper_page/TBGDiff/TBGDiff.html) to find more details. Thanks for your attention :)
 ![STAN](./asset/method.png)
@@ -128,13 +128,13 @@ And it will produce following outputs
 
 ### Inference
 
-Actually we testing every epoch during training stage, and if you just want to infer our **well-trained** model, please download the [**ckpt of TBGDiff on Google Drive**](https://drive.google.com/file/d/1ELEOTQOXDfQ2n5WNy2AKMzQNUiMl6V4M/view?usp=drive_link)  and unzip it in the project (see the `MODEL.CKPT_PATH` in the config `yml` file) , then run the snippet:
+Actually, we testing every epoch during training stage, and if you just want to infer our **well-trained** model, please download the [**ckpt of TBGDiff on Google Drive**](https://drive.google.com/file/d/1ELEOTQOXDfQ2n5WNy2AKMzQNUiMl6V4M/view?usp=drive_link)  and unzip it in the project (see the `MODEL.CKPT_PATH` in the config `yml` file) , then run the snippet:
 
 ```
 accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 inference.py --config "configs/ViShaVideo_STEDiff.yml"
 ```
 
-It also produces following outputs
+It also produces the following outputs
 
 ```
 --output
@@ -178,8 +178,8 @@ accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 in
 ## Others
 
 * I think this work is a PIECE OF SHIT in my standard. I **ABSOLUTELY HATE,DISGUST and DESPISE A+B+C** ***SHIT*** to speculate and trick a conference or journal  (though the designed module is useful and make sense indeed). I **EXTREMELY HATE** such an academic taste. I finish this work just for my job. 
-* Welcome to refer, stole and modify my code. If you are distressed and tired (just like me, no patience to read the documents lol 🤣) on modifying Highly Integrated Architecture like [MMSeg](https://github.com/open-mmlab/mmsegmentation), [Detectron2](https://github.com/facebookresearch/detectron2), [Pytorch-Lightning](https://github.com/Lightning-AI/pytorch-lightning) even [HuggingFace Trainer](https://huggingface.co/docs/transformers/v4.14.1/en/main_classes/trainer) ,  try my workflow. Maybe my proposed network is quite complex, just remove and modify them with your own network and design. I think my pipeline of the code production is enough clear, tidy to read and graceful. I will also arrange and open-source the code of workflow for specializing in common `cls&seg&det` task, wait for my masterpiece  :p
-* Again, you can freely follow the code, but not suggest the taste. I do it just for responsibility bro :(  **Expand the knowledge boundary is research, Build the Lego Bricks is toy player and shit.**
+* Welcome to refer, stole and modify my code. If you are distressed and tired (just like me, no patience to read the documents lol 🤣) on modifying Highly Integrated Architecture like [MMSeg](https://github.com/open-mmlab/mmsegmentation), [Detectron2](https://github.com/facebookresearch/detectron2), [Pytorch-Lightning](https://github.com/Lightning-AI/pytorch-lightning) even [HuggingFace Trainer](https://huggingface.co/docs/transformers/v4.14.1/en/main_classes/trainer) ,  try my workflow. Maybe my proposed network is quite complex, just remove and modify them with your own network and design. I think my pipeline of code production is clear enough, tidy to read, and graceful. I will also arrange and open-source the code of workflow for specializing in common `cls&seg&det` task, wait for my masterpiece  :p
+* Again, you can freely follow the code, but not suggest the taste. I do it just for responsibility bro :(  **Expanding the knowledge boundary is research, Building the Lego Bricks is toy player and shit.** Just target myself, instead of others.
 
 
 
