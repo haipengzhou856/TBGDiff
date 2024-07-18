@@ -1,8 +1,8 @@
 ## Timeline and Boundary Guided Diffusion Network for Video Shadow Detection
 
-#### News: [2024/07]
+## News: [2024/07]
 
-This work has been accepted by ACM MM 2024. Thanks for the co-authos.
+**This work has been accepted by ACM MM 2024. Thanks for the co-authors.**
 
 ## Quick View
 
