@@ -96,13 +96,13 @@ pip install accelerate==0.20.3
 
 #### FOLLOW ME:
 
-1. Customize the configurations on your machine 
+1. Customize the configurations on your machine, run the command line:
 
 ```
 accelerate config
 ```
 
-	or you can use the same settings as mine `accelerate_cfg.yaml`.
+​	or you can use the same settings as mine `accelerate_cfg.yaml`.
 
 2.  Train/Test the model with one command line (see next sections)
 
