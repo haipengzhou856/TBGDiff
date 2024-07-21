@@ -5,7 +5,7 @@
 * This work has been accepted by **ACM MM 2024**. Thanks for the co-authors.
 * Surprisingly, it is further selected as an **Oral (3.97%)** presentation.
 
-<img src="./asset/confusion.jpg" alt="TBGDiff" style="zoom:30%;" />
+<img src="./asset/confusion.jpg" alt="TBGDiff" style="zoom:10%;" />
 
 ## Quick View
 
