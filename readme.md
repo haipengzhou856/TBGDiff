@@ -2,18 +2,34 @@
 
 ## News: [2024/07]
 
-**This work has been accepted by ACM MM 2024. Thanks for the co-authors.**
+* This work has been accepted by **ACM MM 2024**. Thanks for the co-authors.
+* Surprisingly, it is further selected as an **Oral (3.97%)** presentation.
+
+<img src="./asset/confusion.jpg" alt="TBGDiff" style="zoom:30%;" />
 
 ## Quick View
 
 This is an official repo for TBGDiff.  We use Diffusion for video shadow detection. 
 
+Visit our [project page](https://haipengzhou856.github.io/paper_page/TBGDiff/TBGDiff.html) to check the demos. Thanks for your attention :)
+
+**Post issues here or directly contact me([Rydeen, Haipeng ZHOU](https://haipengzhou856.github.io/)) if you have any question, I'm opening** :)
+
+![TBGDiff](./asset/method.png)
+
  **I don't like this incremental shit work, even it is accepted.** [see why](#others)
 
 But you can freely steal the codes, it may be helpful.
 
-Visit our [project page](https://haipengzhou856.github.io/paper_page/TBGDiff/TBGDiff.html) to find more details. Thanks for your attention :)
-![STAN](./asset/method.png)
+
+
+## Off-the-shelf Results
+
+If you guys do not want to reproduce ours and other methods, directly download the visual results on [Google Drive](https://drive.google.com/file/d/1ek2AIsEXXNvozA1cllfWIYYNzoFtupXl/view?usp=drive_link) for a convenience.
+
+Most of them are provided by  [scotch&soda (cvpr23)](https://github.com/lihaoliu-cambridge/scotch-and-soda/tree/main). We add some latest works.
+
+
 
 ## Preparation
 
@@ -24,8 +40,6 @@ Please see [ViSha](https://erasernut.github.io/ViSha.html) to download it, and m
 ### packages
 
 My basic environment: `Python=3.8, CUDA=12.2, ` ~~Pytorch=1.11.0~~ . `medpy` is not suggested to install since it does not support latest `numpy`. I have modified the **matrix.py** borrowed from [scotch&soda (cvpr23)](https://github.com/lihaoliu-cambridge/scotch-and-soda/blob/main/model/scotch_and_soda.py) . Check the `environment.yaml` to install other required packages. 
-
-
 
 **News: ** Please update the `pytorch ` **with higher version (1.12.1 or higher)** for using the resume training. I found that the older version will produce some bugs (see [here](https://stackoverflow.com/questions/73095460/assertionerror-if-capturable-false-state-steps-should-not-be-cuda-tensors)) for the optimizer. And using lower version of `accelerate` (see next section)
 
@@ -62,14 +76,6 @@ if accelerator.is_main_process:
 
 Please change the `gt_path` for your platform.
 
-## Off-the-shelf Results
-
-If you guys do not want to reproduce ours and other methods, directly download the visual results on [Google Drive](https://drive.google.com/file/d/1ek2AIsEXXNvozA1cllfWIYYNzoFtupXl/view?usp=drive_link) for a convenience.
-
-Most of them are provided by  [scotch&soda (cvpr23)](https://github.com/lihaoliu-cambridge/scotch-and-soda/tree/main). We add some latest works.
-
-
-
 ## Experiments
 
 ### Set up
@@ -100,7 +106,7 @@ accelerate config
 
 2.  Train/Test the model with one command line (see next sections)
 
-3.  😎 Play games or listen music to wait the results. 😎 
+3.  😎 Play games or listen to music to wait the results. 😎 
 
 
 
@@ -146,6 +152,8 @@ It also produces the following outputs
 --------tb_path         # store the tensorboard information
 ```
 
+
+
 ## Other Ablation Studies
 
 Very long time ago, I have finished some basic experiments in other machines. I only find out the PEEDiff (i.e., PEE+DSA, without SBBA) and the ckpt is also provided in [here](https://drive.google.com/file/d/1dV0FqFROHXLm9rHy3VemglKjZvbAlosg/view?usp=drive_link). Other ablation studied models are not compatible since I've changed some module structures leading to wrong weight matching. I'm lazy to figure out 🤪. You may manually to test the effectiveness.
@@ -164,14 +172,14 @@ accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 in
 
 ## TODO
 
-* I still think this proposed approach is generalized for all the VOS tasks (the baseline and final model really works well), and I will deploy it to other Video Object Segmentation dataset. Wait for my technical report : )
+* I still think this approach is generalized for all the VOS tasks (the baseline and final model really works well), and I will deploy it to other Video Object Segmentation dataset. Wait for my technical report : )
 
   
 
 ## Note
 
 * We conduct all the experiments with 4GPUs to get stable results, but when we transfer to single or two GPUs the performance gets decrease. This is may caused by  the **batch-size**.  We find larger batch size performs better,  24G may not enough. You may adjust it in customized ways. 
-* Some communication proxies may be have problems (e.g., the dataloader may stuck), check the `NCCL  ` is available for your machine, and my proxy is under `gloo`.
+* Some communication proxies may be have problems (e.g., the dataloader may stuck), check the `NCCL` is available for your machine, and my proxy is under `gloo`.
 
 
 
@@ -192,3 +200,8 @@ accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 in
 ## Citation
 
 If this paper and code are useful in your research, please consider citing:
+
+```
+
+```
+
