@@ -2,7 +2,6 @@ from tqdm import tqdm
 import numpy as np
 import os
 from PIL import Image
-from medpy import metric
 
 IMG_EXTENSIONS = [
     '.jpg', '.JPG', '.jpeg', '.JPEG',
