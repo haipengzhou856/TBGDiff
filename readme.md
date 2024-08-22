@@ -1,4 +1,4 @@
-## [Timeline and Boundary Guided Diffusion Network for Video Shadow Detection](https://arxiv.org/abs/2408.11785)
+## [Timeline and Boundary Guided Diffusion Network for Video Shadow Detection](https://arxiv.org/abs/2408.11785) (ACM MM2024)
 
 ## News: [2024/07]
 
