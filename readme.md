@@ -1,4 +1,4 @@
-## Timeline and Boundary Guided Diffusion Network for Video Shadow Detection
+## [Timeline and Boundary Guided Diffusion Network for Video Shadow Detection](https://arxiv.org/abs/2408.11785)
 
 ## News: [2024/07]
 
@@ -102,7 +102,7 @@ pip install accelerate==0.20.3
 accelerate config
 ```
 
-​	or you can use the same settings as mine `accelerate_cfg.yaml`.
+	or you can use the same settings as mine `accelerate_cfg.yaml`.
 
 2.  Train/Test the model with one command line (see next sections)
 
@@ -186,9 +186,9 @@ accelerate launch --config_file accelerate_cfg.yaml --main_process_port 29050 in
 ## Others
 
 * I admit this work is a PIECE OF SHIT in my standard. I **ABSOLUTELY HATE, DISGUST, and DESPISE A+B+C** ***SHIT*** to speculate and trick a conference or journal  (though the designed module is useful and makes sense indeed). I **EXTREMELY HATE** such an academic taste. Such a kind of paper can not provide any insights. None of contribution to the community. It is disgusting, at least for me. I finish this work just for my job. 
-* Welcome to refer, steal, and modify my codes. If you are distressed and tired (just like me, no patience to read the documents lol 🤣) on modifying Highly Integrated Architecture like [MMSeg](https://github.com/open-mmlab/mmsegmentation), [Detectron2](https://github.com/facebookresearch/detectron2), [Pytorch-Lightning](https://github.com/Lightning-AI/pytorch-lightning) even [HuggingFace Trainer](https://huggingface.co/docs/transformers/v4.14.1/en/main_classes/trainer) ,  try my workflow. Maybe my proposed network is quite complex, just remove and modify them with your own network and design. I think my pipeline of code production is clear enough, tidy to read, and graceful. I will also arrange and open-source the code of workflow for specializing in common `cls&seg&det` task, wait for my masterpiece  :p
+* Welcome to refer, steal, and modify my codes. If you are distressed and tired (just like me, no patience to read the documents lol 🤣) on modifying Highly Integrated Architecture like [MMSeg](https://github.com/open-mmlab/mmsegmentation), [Detectron2](https://github.com/facebookresearch/detectron2), [Pytorch-Lightning](https://github.com/Lightning-AI/pytorch-lightning) even [HuggingFace Trainer](https://huggingface.co/docs/transformers/v4.14.1/en/main_classes/trainer) ,  try my workflow. Maybe my proposed network is quite complex, just remove and modify them with your own network and design. I think my pipeline of code production is clear enough, tidy to read, and graceful. I will also arrange and open-source the code of workflow for specializing in common `cls&seg&det` tasks, wait for my masterpiece  :p
 * Again, you can freely follow the code, but not suggest the taste. I do it just for responsibility bro :(  **Expanding the knowledge boundary is research, Building the Lego Bricks is toy player and shit.** Just target myself, instead of others.
-* Appolgize for these offensive words, but just toward myself. 个人观点，勿对号入座。
+* Apologize for these offensive words, but just toward myself. 个人观点，勿对号入座。
 
 ## Acknowledgement
 
@@ -209,4 +209,3 @@ booktitle={ACM Multimedia 2024},
 year={2024},
 }
 ```
-
